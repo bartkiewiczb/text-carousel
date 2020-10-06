@@ -1,0 +1,125 @@
+body {
+  font: 26px "Grestin", Futura, sans-serif;
+  margin: 20px;
+  color:white;
+  background-color:black;
+  text-align:right;
+  overflow:hidden;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes dropOut {
+  from {
+    top: 0;
+  }
+  to {
+    top: 40px;
+  }
+}
+
+@keyframes dropIn {
+  from {
+    top: 40px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.dropOut {
+  animation-name: dropOut;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.dropIn {
+  animation-name: dropIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.slideOut {
+  animation-name: slideOut;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.slideIn {
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.ponyWrapper {
+  position:relative;
+}
+
+.pony {
+  opacity:0;
+  padding-right:10px; 
+}
+
+.alart {
+  position: relative;
+  top: -34px;
+  left: 100%;
+  padding-right:10px; 
+}
+
+.clock {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
